@@ -30,31 +30,7 @@ public class Product {
         this.price = price;
     }
 
-    /**
-     * @return the id
-     */
     public long getId() {
         return id;
-    }
-
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @return the price
-     */
-    public float getPrice() {
-        return price;
-    }
-
-    /**
-     * @return the description
-     */
-    public String getDescription() {
-        return description;
     }
 }

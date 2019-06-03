@@ -5,6 +5,8 @@ import com.lab2.rest.dao.ProductDAO;
 import com.lab2.rest.model.Product;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductService {
 
@@ -23,7 +25,7 @@ public class ProductService {
 
         Product product = productDAO.findById(productToUpdate.getId());
         if (product == null)
-            throw new ProductNotFoundException("Could not update. The product does not exist.");
+            throw new  ProductNotFoundException("Could not update. The product does not exist.");
 
         return productDAO.save(productToUpdate);
     }
@@ -34,5 +36,9 @@ public class ProductService {
 
     public Product findById(long id) {
         return productDAO.findById(id);
+    }
+
+    public List<Product> findAll() {
+        return productDAO.findAll();
     }
 }

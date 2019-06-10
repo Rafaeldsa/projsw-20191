@@ -16,4 +16,5 @@ public interface UserDAO<T, ID extends Serializable> extends JpaRepository<User,
     @Query(value="Select u from User u where u.login=:plogin")
     User findByLogin(@Param("plogin") String login);
 
+    User findById(long id);
 }

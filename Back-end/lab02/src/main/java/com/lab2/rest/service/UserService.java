@@ -14,6 +14,17 @@ public class UserService {
     }
 
     public User create(User user) {
+        User userVerify = findByLogin(user.getLogin());
+
+        if (!(userVerify == null)){
+            throw new RuntimeException("Could not create. The login already exist.");
+        }
         return userDAO.save(user);
+    }
+
+
+
+    public User findByLogin(String userLogin) {
+        return (userDAO.findByLogin(userLogin));
     }
 }

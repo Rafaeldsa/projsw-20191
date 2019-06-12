@@ -26,5 +26,8 @@ public class User {
         this.senha = senha;
     }
 
+    public String getLogin() {
+        return login;
+    }
 }
 

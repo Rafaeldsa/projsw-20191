@@ -1,5 +1,6 @@
 # Projeto de Software CC/UFCG 2019.1
 
+## Introdução
 Este repositório reúne as notas de aula, os exercícios e os
 exemplos usados em sala de aula. Sugiro que cada aluno da
 disciplina se registre como _watcher_ do repositório para que
@@ -14,4 +15,6 @@ receba notificações de adições/modificações dos arquivos.
 
 ## Conteúdo
 
-- [Web Apps](06.web_apps/text.md)
+- [Frontend](/Front-end)
+  - [Web Apps](/Front-end/06.web_apps/text.md)
+- [Backend](/Back-end)
